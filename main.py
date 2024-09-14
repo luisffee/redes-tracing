@@ -4,6 +4,13 @@ import matplotlib.pyplot as plt
 
 # Your code for data processing and calculations
 
+# Example code to save a dictionary as a pickle file
+data = {"key1": "value1", "key2": "value2", "key3": "value3"}
+pickle_file_path = os.path.join(os.getcwd(), "data.pickle")
+with open(pickle_file_path, "wb") as pickle_file:
+    pickle.dump(data, pickle_file)
+print("Dictionary saved as pickle file.")
+
 # Example code to generate a line graph
 x = [1, 2, 3, 4, 5]
 y = [10, 15, 7, 12, 9]
